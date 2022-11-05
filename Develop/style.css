@@ -1,3 +1,4 @@
+/*Universal element selectors*/
 *,
 *::before,
 *::after {
@@ -11,25 +12,25 @@ body,
   margin: 0;
   padding: 0;
 }
-
+/*This styles the basics such as font and webpage background*/
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
 }
-
+/*This places out box and webpage title in the center of the webpage*/
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
-
+/*This styles our webpage title 'Password Generator'*/
 header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
 }
-
+/*This styles our password generator box*/
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -41,7 +42,7 @@ header {
   max-width: 800px;
   padding: 30px 40px;
 }
-
+/*This styles the box title*/
 .card-header::after {
   content: " ";
   display: block;
@@ -49,15 +50,15 @@ header {
   background: #e7e9eb;
   height: 2px;
 }
-
+/*This decides the minimum height for the box*/
 .card-body {
   min-height: 100px;
 }
-
+/*This decides the placement of our password generate button*/
 .card-footer {
   text-align: center;
 }
-
+/*This generates the gray lines below the output box*/
 .card-footer::before {
   content: " ";
   display: block;
@@ -65,13 +66,13 @@ header {
   background: #e7e9eb;
   height: 2px;
 }
-
+/*This adds spacing after the generate password button*/
 .card-footer::after {
   content: " ";
   display: block;
   clear: both;
 }
-
+/*This styles the generate button*/
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -96,7 +97,7 @@ button[disabled] {
 .float-right {
   float: right;
 }
-
+/*This styles the output box where our password will appear*/
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -117,7 +118,7 @@ button[disabled] {
   resize: none;
   overflow: hidden;
 }
-
+/*The next few sections change small details for different screen sizes*/
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
