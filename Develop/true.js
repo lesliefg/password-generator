@@ -87,7 +87,7 @@ function generatePassword() {
     }
   }
   if (confirmNumbers === true) {
-    for (var i = 0; i <numbers.length; i++) {
+    for (var i = 0; i <upper.numbers; i++) {
       validInputs.push(numbers[i]);
     }
   }
